@@ -31,4 +31,14 @@
 > Language: Python
 > 
 > You can take full page screenshot with Selenium-Screenshot, Just use `pip install Selenium-Screenshot` and enjoy :)
+------------------------
+
+
+<img src="https://chromeunboxed.com/wp-content/uploads/2017/08/IDR_LOGIN_DEFAULT_USER_38@2x.png" width="50" height="50"/>
+
+
+### PythonChromeProfile
+> Language: Python
+> 
+> Start chrome with a predefined profile. Please refer to ReadMe in the project for initializations
 
