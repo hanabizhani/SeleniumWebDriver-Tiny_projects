@@ -25,7 +25,7 @@
 > With this project you can intercept websocket requests and fetch messages sent and received.
 ------------------------
 
-<img src="https://img1.pnghut.com/25/20/18/5viX7yXRTZ/area-snapshot-photography-electric-blue-share-icon.jpg" width="50" height="50"/> 
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRejm-Y2lrGpUicfBEDHQwNp5mETlI7Yhwesg&usqp=CAU" width="50" height="50"/> 
 
 ### PythonFullPageScreenShot
 > Language: Python
