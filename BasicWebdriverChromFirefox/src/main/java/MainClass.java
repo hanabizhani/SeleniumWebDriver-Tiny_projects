@@ -10,6 +10,7 @@ import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
@@ -35,10 +36,19 @@ public class MainClass {
         driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-        driver.get("https://www.google.com/");
-        WebElement searchbox = driver.findElement(By.name("q"));
+        //driver.get("https://www.google.com/");
+        /*WebElement searchbox = driver.findElement(By.name("q"));
         searchbox.sendKeys("YouTube");
-        searchbox.submit();
+        searchbox.submit();*/
+
+
+        driver.get("http://localhost:8080/WebappModule_Web2_exploded/");
+
+        String xpath = String.format("//div[@class='SelectBox']/ul/li[contains(text(),'{0}')]", "IRAN");
+        driver.findElement(By.xpath(xpath));
+        Select select = new Select(driver.findElement(By.xpath("//div[@class='SelectBox']")));
+        select.selectByVisibleText("IRAN");
+
         Thread.sleep(5000);//For user to watch what happend
         driver.quit();
     }
