@@ -1,6 +1,14 @@
 # SeleniumWebDriver-Tiny_projects
 
 
+<img src="https://aerokube.com/selenoid/images/aerokube_logo.svg" width="50" height="50"/> 
+
+### CrossBrowserWithSelenoid: 
+> Language: Java
+> 
+> Cross browser testing with predefined selenoid
+------------------------
+
 <img src="https://icons.iconarchive.com/icons/untergunter/leaf-mimes/512/opera-extension-icon.png" width="50" height="50"/> 
 
 ### AddBrowserExtension: 
