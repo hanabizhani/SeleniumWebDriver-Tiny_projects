@@ -1,6 +1,7 @@
 package setups;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -16,13 +17,23 @@ public class SetDriverUp {
 
     private RemoteWebDriver driver;
 
-    public SetDriverUp() throws MalformedURLException {
-        /*System.setProperty("webdriver.gecko.driver", "C:\\geckodriver.exe");
-        driver = new FirefoxDriver();*/
+    public SetDriverUp(String browserName, String browserVersion) throws MalformedURLException {
 
+       /* if(browserName.equals("chrome")){
+            System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+            driver = new ChromeDriver();
+        }
+
+        else{
+            System.setProperty("webdriver.gecko.driver", "C:\\geckodriver.exe");
+            driver = new FirefoxDriver();
+        }*/
+
+
+        System.out.println("------------" + browserName + browserVersion);
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("browserName", "chrome");
-        capabilities.setCapability("browserVersion", "97.0");
+        capabilities.setCapability("browserName", browserName);
+        capabilities.setCapability("browserVersion", browserVersion);
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                 "enableVNC", true,
                 "enableVideo", true

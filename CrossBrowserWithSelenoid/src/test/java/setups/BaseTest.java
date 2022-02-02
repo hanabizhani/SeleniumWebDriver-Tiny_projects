@@ -12,8 +12,9 @@ public class  BaseTest{
     WebDriver driver;
 
     @BeforeTest
-    public void setup() throws MalformedURLException {
-        SetDriverUp setupDriver = new SetDriverUp();
+    @Parameters({"browserName", "browserVersion"})
+    public void setup(String browserName, String browserVersion) throws MalformedURLException {
+        SetDriverUp setupDriver = new SetDriverUp(browserName, browserVersion);
         driver = setupDriver.getDriver();
     }
 

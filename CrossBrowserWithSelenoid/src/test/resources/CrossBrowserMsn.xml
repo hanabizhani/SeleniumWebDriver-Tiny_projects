@@ -1,5 +1,8 @@
 <suite name="Example test run">
     <test name="Simple Test">
+        <parameter name="browserName" value="chrome" />
+        <parameter name="browserVersion" value="97.0" />
+
         <classes>
             <class name="CrossBrowserTestMsn"/>
         </classes>
